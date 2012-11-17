@@ -4,7 +4,7 @@ count = input.gets.to_i
   number, surprises, points, *a = input.gets.split.map {|i| i.to_i}
   normal = points + [points - 1, 0].max * 2
   unusual = points + [points - 2, 0].max * 2
-  surp = 0
+    surp = 0
   total = a.count do |x|
     if normal <= x
       true
