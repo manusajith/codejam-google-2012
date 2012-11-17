@@ -1,3 +1,4 @@
+=begin
 googlerese = "ejp mysljylc kd kxveddknmc re jsicpdrysi" \
             "rbcpc ypc rtcsra dkh wyfrepkym veddknkmkrkcd" \
             "de kr kd eoya kw aej tysr re ujdr lkgc jv"
@@ -9,3 +10,8 @@ english.each_char.with_index { |e, g| lang[googlerese[g]] = e }
 File.read("input.txt").each_line.with_index do |l, i|
   puts "Case ##{i}: #{(l.chomp.each_char.map {|x| lang[x] }).join}"
 end
+
+=end
+
+#found a better solution after analyzing the given sample data
+1.upto(gets.to_i){|i|puts"Case ##{i}: "+gets.tr("a-z","yhesocvxduiglbkrztnwjpfmaq")}
