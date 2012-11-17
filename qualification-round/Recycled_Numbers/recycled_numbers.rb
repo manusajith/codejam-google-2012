@@ -1,4 +1,4 @@
-input = File.read("n")
+input = File.read("input_small.txt")
 input.each_line.with_index do |line, i|
   next if i.zero?
   a, b = line.split(' ').map {|x| x.to_i}
